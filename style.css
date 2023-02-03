@@ -1,0 +1,18 @@
+.button {
+  padding: 10px;
+}
+
+.buy {
+  color: lightgray;
+  background-color: green;
+}
+
+/* Man kan komma åt data-attribut med CSS med funtionen attr() */
+button::before {
+  content: attr(data-product-id);
+}
+
+/* Man kan även styla på data-attribut*/
+button[data-product-id="1"] {
+  background-color: brown;
+}
