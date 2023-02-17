@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Demo av data-attribut i HTML</h1>
+    <h1>Demo av data-attribut i HTML/CSS/JavaScript</h1>
     <p>
       Öppna konsolen, klicka på knapparna och se vad som skrivs ut. Titta sedan
       på koden i <code>app.js</code> för att se hur den är skriven.
+      Data-attribut används för att hålla koll på vilken produkts köp-knapp som
+      klickats på.
     </p>
     <p>
       Titta i <code>style.css</code> för att se hur data-attribut, och andra
@@ -22,20 +24,39 @@
       <a
         href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes"
         >MDN web docs</a
+      >, titta på den här
+      <a href="https://css-tricks.com/a-complete-guide-to-data-attributes/"
+        >bloggen</a
       >
-      och
+      eller
       <a
         href="https://www.youtube.com/watch?v=cTe5vQAm2So&ab_channel=OpenJavaScript"
         >YouTube</a
       >.
     </p>
-    <button class="button buy" data-product-id="1">Köp produkt 1</button>
-    <button class="button buy" data-product-id="2">Köp produkt 2</button>
-    <button class="button buy" data-product-id="3">Köp produkt 3</button>
-    <button class="button buy" data-product-id="4">Köp produkt 4</button>
-    <button class="button buy" data-product-id="5">Köp produkt 5</button>
-    <button class="button buy" data-product-id="6">Köp produkt 6</button>
-    <button class="button buy" data-product-id="7">Köp produkt 7</button>
+
+    <div class="product-container">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150?text=Produkt 1" />
+        <p>Produkt 1</p>
+        <button class="button buy" data-product-id="1">Köp</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150?text=Produkt 2" />
+        <p>Produkt 2</p>
+        <button class="button buy" data-product-id="2">Köp</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150?text=Produkt 3" />
+        <p>Produkt 3</p>
+        <button class="button buy" data-product-id="3">Köp</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150?text=Produkt 4" />
+        <p>Produkt 4</p>
+        <button class="button buy" data-product-id="4">Köp</button>
+      </div>
+    </div>
   </body>
   <script src="app.js"></script>
 </html>

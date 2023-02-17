@@ -2,17 +2,39 @@
   padding: 10px;
 }
 
-.buy {
-  color: lightgray;
-  background-color: green;
+.product-container {
+  display: flex;
+  gap: 10px;
+}
+.product-card {
+  width: 20%;
+}
+.product-card img {
+  width: 100%;
 }
 
-/* Man kan komma åt data-attribut med CSS med funtionen attr() */
+.buy {
+  color: lightgray;
+  display: block;
+  margin-left: auto;
+}
+
+/* 
+  Man kan komma åt data-attribut med CSS med funtionen attr() 
+  Här används det för att lägga in idt på knappen.
+  Kanske inte så användbart men det visar på pricipen. :)
+*/
 button::before {
   content: attr(data-product-id);
 }
 
 /* Man kan även styla på data-attribut*/
+[data-product-id] {
+  /* Alla elementet som har attributet */
+  background-color: green;
+}
+
 button[data-product-id="1"] {
+  /* buttons som har attributet med värde 1 */
   background-color: brown;
 }
